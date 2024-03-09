@@ -1,0 +1,49 @@
+<!-- about.html -->
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>About Us</title>
+{% endblock %}
+
+{% block body %}
+<section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+        <div class="section-header">
+            <span>About Us</span>
+            <h2>About Us</h2>
+    
+          </div>
+    
+    </div>
+    </section>
+<section>
+<div class="container">
+    <h1 class="my-4">About Anymart</h1>
+
+    <h2>Our Mission</h2>
+    <p>At Anymart, our mission is to provide a seamless and convenient online marketplace where buyers and sellers can connect, trade, and discover a wide range of products. We strive to create a trusted platform that fosters transparency, fairness, and positive experiences for all users.</p>
+
+    <h2>How Anymart Works</h2>
+    <p>
+        Anymart enables individuals and businesses to list and sell products in various categories. 
+        Buyers can explore the marketplace, discover unique items, and connect with sellers to make purchases.
+        Our platform aims to facilitate smooth transactions, secure payments, and reliable communication between buyers and sellers.
+        <a href="{% url 'faq' %}">FAQ</a>
+    </p>
+
+    <h2>Our Values</h2>
+    <ul>
+        <li>Transparency: We believe in transparency and openness in all our operations, fostering trust and accountability among our users.</li>
+        <li>Quality: We strive to maintain high standards of quality across the platform, ensuring that products listed on Anymart meet customer expectations.</li>
+        <li>User Experience: We prioritize creating a user-friendly and enjoyable experience for all users, with intuitive navigation, responsive support, and seamless interactions.</li>
+        <li>Community: We value our vibrant community of buyers and sellers and aim to nurture a supportive and inclusive environment for everyone.</li>
+        <li>Innovation: We are committed to embracing technological advancements and continuously improving our platform to meet the evolving needs of our users.</li>
+    </ul>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feedback, or inquiries, we'd love to hear from you. 
+        You can reach out to our support team at support@anymart.com or use the <a href="{% url 'contact' %}">contact form</a> on our website.
+        We're here to assist you and ensure you have a positive experience on Anymart.</p>
+</div>
+</section>
+{% endblock %}

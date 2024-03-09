@@ -1,0 +1,62 @@
+
+ajavascript:S1121W"@Extract the assignment of "module.exports" from this expression.(Èö£Éşÿÿÿÿ
+ejavascript:S3358W"DExtract this nested ternary operation into an independent statement.(Èö£Éşÿÿÿÿ
+ejavascript:S3358W"DExtract this nested ternary operation into an independent statement.(Èö£Éşÿÿÿÿ
+fjavascript:S1121W"EExtract the assignment of "exports.PureCounter" from this expression.(Èö£Éşÿÿÿÿ
+`javascript:S1121W"?Extract the assignment of "e.PureCounter" from this expression.(Èö£Éşÿÿÿÿ
+vjavascript:S3776W"URefactor this function to reduce its Cognitive Complexity from 186 to the 15 allowed.(Èö£Éşÿÿÿÿ
+Wjavascript:S1121W"6Extract the assignment of "e[t]" from this expression.(Èö£Éşÿÿÿÿ
+Ajavascript:S878W"!Unexpected use of comma operator.(Èö£Éşÿÿÿÿ
+œjavascript:S2681W"{This statement will not be executed conditionally; only the first statement will be. The rest will execute unconditionally.(Èö£Éşÿÿÿÿ
+Ajavascript:S878W"!Unexpected use of comma operator.(Èö£Éşÿÿÿÿ
+ejavascript:S3358W"DExtract this nested ternary operation into an independent statement.(Èö£Éşÿÿÿÿ
+xjavascript:S2392W"WConsider moving declaration of 'n' as it is referenced outside current binding context.(Èö£Éşÿÿÿÿ
+’javascript:S2681W"qThis statement will not be executed in a loop; only the first statement will be. The rest will execute only once.(Èö£Éşÿÿÿÿ
+fjavascript:S905W"FExpected an assignment or function call and instead saw an expression.(Èö£Éşÿÿÿÿ
+Ajavascript:S878W"!Unexpected use of comma operator.(Èö£Éşÿÿÿÿ
+’javascript:S2681W"qThis statement will not be executed in a loop; only the first statement will be. The rest will execute only once.(Èö£Éşÿÿÿÿ
+bjavascript:S6661W"AUse an object spread instead of `Object.assign` eg: `{ ...foo }`.(Èö£Éşÿÿÿÿ
+fjavascript:S905W"FExpected an assignment or function call and instead saw an expression.(Èö£Éşÿÿÿÿ
+fjavascript:S905W"FExpected an assignment or function call and instead saw an expression.(Èö£Éşÿÿÿÿ
+Ajavascript:S878W"!Unexpected use of comma operator.(Èö£Éşÿÿÿÿ
+Ajavascript:S878W"!Unexpected use of comma operator.(Èö£Éşÿÿÿÿ
+fjavascript:S905W"FExpected an assignment or function call and instead saw an expression.(Èö£Éşÿÿÿÿ
+Ajavascript:S878W"!Unexpected use of comma operator.(Èö£Éşÿÿÿÿ
+fjavascript:S905W"FExpected an assignment or function call and instead saw an expression.(Èö£Éşÿÿÿÿ
+Ajavascript:S878W"!Unexpected use of comma operator.(Èö£Éşÿÿÿÿ
+’javascript:S2681W"qThis statement will not be executed in a loop; only the first statement will be. The rest will execute only once.(Èö£Éşÿÿÿÿ
+Ajavascript:S878W"!Unexpected use of comma operator.(Èö£Éşÿÿÿÿ
+ejavascript:S3358W"DExtract this nested ternary operation into an independent statement.(Èö£Éşÿÿÿÿ
+ujavascript:S5843W"TSimplify this regular expression to reduce its complexity from 32 to the 20 allowed.(Èö£Éşÿÿÿÿ
+Bjavascript:S6535W"!Unnecessary escape character: \..(Èö£Éşÿÿÿÿ
+ejavascript:S3358W"DExtract this nested ternary operation into an independent statement.(Èö£Éşÿÿÿÿ
+Tjavascript:S1121W"3Extract the assignment of "a" from this expression.(Èö£Éşÿÿÿÿ
+Ajavascript:S878W"!Unexpected use of comma operator.(Èö£Éşÿÿÿÿ
+Qjavascript:S6035W"0Replace this alternation with a character class.(Èö£Éşÿÿÿÿ
+Qjavascript:S6035W"0Replace this alternation with a character class.(Èö£Éşÿÿÿÿ
+Pjavascript:S1854W"/Remove this useless assignment to variable "e".(Èö£Éşÿÿÿÿ
+Tjavascript:S1121W"3Extract the assignment of "e" from this expression.(Èö£Éşÿÿÿÿ
+\javascript:S6353W";Use concise character class syntax '\d' instead of '[0-9]'.(Èö£Éşÿÿÿÿ
+\javascript:S6353W";Use concise character class syntax '\d' instead of '[0-9]'.(Èö£Éşÿÿÿÿ
+ejavascript:S3358W"DExtract this nested ternary operation into an independent statement.(Èö£Éşÿÿÿÿ
+\javascript:S6353W";Use concise character class syntax '\d' instead of '[0-9]'.(Èö£Éşÿÿÿÿ
+ejavascript:S3358W"DExtract this nested ternary operation into an independent statement.(Èö£Éşÿÿÿÿ
+ujavascript:S5850W"TGroup parts of the regex together to make the intended operator precedence explicit.(Èö£Éşÿÿÿÿ
+xjavascript:S2392W"WConsider moving declaration of 't' as it is referenced outside current binding context.(Èö£Éşÿÿÿÿ
+xjavascript:S2392W"WConsider moving declaration of 'r' as it is referenced outside current binding context.(Èö£Éşÿÿÿÿ
+xjavascript:S2392W"WConsider moving declaration of 'n' as it is referenced outside current binding context.(Èö£Éşÿÿÿÿ
+xjavascript:S2392W"WConsider moving declaration of 'o' as it is referenced outside current binding context.(Èö£Éşÿÿÿÿ
+Tjavascript:S1121W"3Extract the assignment of "e" from this expression.(Èö£Éşÿÿÿÿ
+Ajavascript:S878W"!Unexpected use of comma operator.(Èö£Éşÿÿÿÿ
+’javascript:S2681W"qThis statement will not be executed in a loop; only the first statement will be. The rest will execute only once.(Èö£Éşÿÿÿÿ
+fjavascript:S905W"FExpected an assignment or function call and instead saw an expression.(Èö£Éşÿÿÿÿ
+^javascript:S1121W"=Extract the assignment of "r.innerHTML" from this expression.(Èö£Éşÿÿÿÿ
+œjavascript:S2681W"{This statement will not be executed conditionally; only the first statement will be. The rest will execute unconditionally.(Èö£Éşÿÿÿÿ
+^javascript:S1121W"=Extract the assignment of "r.innerHTML" from this expression.(Èö£Éşÿÿÿÿ
+Ojavascript:S6666W".Use the spread operator instead of '.apply()'.(Èö£Éşÿÿÿÿ
+Ajavascript:S878W"!Unexpected use of comma operator.(Èö£Éşÿÿÿÿ
+œjavascript:S2681W"{This statement will not be executed conditionally; only the first statement will be. The rest will execute unconditionally.(Èö£Éşÿÿÿÿ
+Ajavascript:S878W"!Unexpected use of comma operator.(Èö£Éşÿÿÿÿ
+ijavascript:S4138†"LExpected a `for-of` loop instead of a `for` loop with this simple iteration.(àìÏó
+tjavascript:S2392†"WConsider moving declaration of 'i' as it is referenced outside current binding context.(àìÏó
+;javascript:S125"Remove this commented out code.(ğÂÛ·

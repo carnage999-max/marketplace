@@ -1,0 +1,237 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load cloudinary %}
+{% block head %}
+    <title>Marketplace</title>
+    {% endblock head %}
+
+
+{% block body %}
+
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="hero d-flex align-items-center">
+  <div class="container">
+    <div class="row gy-4 d-flex justify-content-between">
+      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+        <h2>Shop Anytime, Anywhere, AnyMart!</h2>
+        <p>
+          Welcome to the marketplace where convenience meets equality.
+        </p>
+
+        <form action="{% url 'search' %}" class="form-search d-flex align-items-stretch mb-3" method="get">
+          <input type="text" class="form-control" placeholder="Search for a product or category" name="search">
+          <input type="submit" class="btn btn-primary" style="background-color:#26547C;" value="Search">
+        </form>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <img src="{% static 'img/fashion.png' %}" alt="">
+              <p>
+                <a href="{% url 'category-filter' 'Fashion Products' %}" style="color:lightgrey;">Fashion Products</a>
+              </p>
+            </div>
+          </div><!-- End Stats Item -->
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <img width="48" height="48" src="https://img.icons8.com/cute-clipart/64/play-station--v1.png" alt="play-station"/>
+              <p>
+                <a href="{% url 'category-filter' 'Games and Consoles' %}" style="color:lightgrey;">Games and Consoles</a>
+              </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <img width="48" height="48" src="https://img.icons8.com/fluency/48/iphone13.png" alt="iphone13"/>
+              <p>
+                <a href="{% url 'category-filter' 'Phones and Tablets' %}" style="color:lightgrey;">Phones and Tablets</a>
+              </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <img src="{% static 'img/computer.png' %}" alt="">
+              <p>
+                <a href="{% url 'category-filter' 'Computing' %}" style="color:lightgrey;">Computing</a>
+              </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <img width="64" height="64" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-electronics-home-appliance-flaticons-lineal-color-flat-icons.png" alt="external-electronics-home-appliance-flaticons-lineal-color-flat-icons"/>
+              <p>
+                <a href="{% url 'category-filter' 'Electronics' %}" style="color:lightgrey;">Electronics</a>
+              </p>
+            </div>
+          </div><!-- End Stats Item -->
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <img width="64" height="64" src="https://img.icons8.com/plasticine/100/books.png" alt="books"/>
+              <p>
+                <a href="{% url 'category-filter' 'Books' %}" style="color:lightgrey;">Books</a>
+              </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <img width="48" height="48" src="https://img.icons8.com/color/48/furniture.png" alt="furniture"/>
+              <p>
+                <a href="{% url 'category-filter' 'Furniture, Home and Office ' %}" style="color:lightgrey;">Furnitures, Home and Office</a>
+              </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <img src="{% static 'img/ball1.png' %}" alt="">
+              <p>
+                <a href="{% url 'category-filter' 'Hobbies, Sport and Fitness' %}" style="color:lightgrey;">Hobbies, Sport and Fitness</a>
+              </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <img width="48" height="48" src="https://img.icons8.com/emoji/48/lotion-bottle.png" alt="lotion-bottle"/>
+              <p>
+                <a href="{% url 'category-filter' 'Health and Beauty' %}" style="color:lightgrey;">Health and Beauty</a></p>
+            </div>
+          </div><!-- End Stats Item -->
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <img width="48" height="48" src="https://img.icons8.com/fluency/48/seesaw.png" alt="seesaw"/>
+              <p>
+                <a href="{% url 'category-filter' 'Baby and Kids Products' %}" style="color:lightgrey;">Baby and Kids Products</a>
+              </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100"><img src="{% static 'img/music.png' %}" alt="">
+              <p>
+                <a href="{% url 'category-filter' 'Movies and Music' %}" style="color:lightgrey;">Movies and Music</a>
+              </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <img width="64" height="64" src="https://img.icons8.com/arcade/64/bracelet.png" alt="bracelet"/>
+              <p>
+                <a href="{% url 'category-filter' 'Accessories' %}" style="color:lightgrey;">Accessories</a>
+              </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+      </div>
+
+      <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+        <img src="{% static 'img/hero-img1.png' %}" class=" mb-3 mb-lg-0" alt="">
+      </div>
+
+    </div>
+  </div>
+</section><!-- End Hero Section -->
+
+  <section id="service" class="services pt-0">
+    <div class="container">
+
+      <div class="section-header">
+        <span>Products</span>
+        <h2>Products</h2>
+
+      </div>
+
+      <div class="row gy-4">
+{% for product in products %}
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-img">
+              {% with image=product.cloudinaryurls_set.first %}
+                {% if image %}
+                  <img src="{{ image.link }}" alt="Product Image" class="img-fluid">
+                {% else %}
+                  <img src="{% static 'img/storage-service.jpg' %}" alt="" class="img-fluid">
+                {% endif %}
+              {% endwith %}
+            </div>
+            <h3><a href="{% url 'desc' pk=product.pk %}" class="stretched-link">{{ product.product_name }}</a></h3>
+            <p>
+              &#8358;{{ product.price }}
+            </p>
+            <p>
+              {{ product.category }}
+            </p>
+          </div>
+        </div><!-- End Card Item -->
+{% endfor %}
+        
+      </div>
+    </div>
+  </section><!-- End Services Section -->
+
+
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+
+      <div class="slides-1 swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <a href="{% url 'addproduct' %}">
+              <h1 class="text-white" style="font-style: normal; font-weight: bold;">
+                You can sell virtually anything, used or brand new free of charge today
+              </h1>
+              <a class="btn" style="background-color: #26547C; color:black;">Create new Ad</>
+            </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <h1>Shop for any product without limit</h1>
+              {% if not request.user.is_authenticated %}
+              <a href="{% url 'login' %}" class="btn " style="background-color:#26547C;">
+                Get Started today
+              </a>
+              {% else %}
+              <a href="{% url 'index' %}" class="btn " style="background-color:#26547C;">
+                Get Started today
+              </a>
+              {% endif %}
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section>
+
+  
+
+    {% block scripts %}
+    <script>
+      !function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t():"function"==typeof define&&define.amd?define([],t):"object"==typeof exports?exports.PureCounter=t():e.PureCounter=t()}(self,(function(){return e={638:function(e){function t(e,t,r){return t in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r,e}function r(e){return function(e){if(Array.isArray(e))return n(e)}(e)||function(e){if("undefined"!=typeof Symbol&&null!=e[Symbol.iterator]||null!=e["@@iterator"])return Array.from(e)}(e)||function(e,t){if(e){if("string"==typeof e)return n(e,t);var r=Object.prototype.toString.call(e).slice(8,-1);return"Object"===r&&e.constructor&&(r=e.constructor.name),"Map"===r||"Set"===r?Array.from(e):"Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?n(e,t):void 0}}(e)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function n(e,t){(null==t||t>e.length)&&(t=e.length);for(var r=0,n=new Array(t);r<t;r++)n[r]=e[r];return n}function o(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},r={};for(var n in e)if(t=={}||t.hasOwnProperty(n)){var o=c(e[n]);r[n]=o,n.match(/duration|pulse/)&&(r[n]="boolean"!=typeof o?1e3*o:o)}return Object.assign({},t,r)}function i(e,t){var r=(t.end-t.start)/(t.duration/t.delay),n="inc";t.start>t.end&&(n="dec",r*=-1);var o=c(t.start);e.innerHTML=u(o,t),!0===t.once&&e.setAttribute("data-purecounter-duration",0);var i=setInterval((function(){var a=function(e,t){var r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:"inc";return e=c(e),t=c(t),parseFloat("inc"===r?e+t:e-t)}(o,r,n);e.innerHTML=u(a,t),((o=a)>=t.end&&"inc"==n||o<=t.end&&"dec"==n)&&(e.innerHTML=u(t.end,t),t.pulse&&(e.setAttribute("data-purecounter-duration",0),setTimeout((function(){e.setAttribute("data-purecounter-duration",t.duration/1e3)}),t.pulse)),clearInterval(i))}),t.delay)}function a(e,t){return Math.pow(e,t)}function u(e,t){var r={minimumFractionDigits:t.decimals,maximumFractionDigits:t.decimals},n="string"==typeof t.formater?t.formater:void 0;return e=function(e,t){if(t.filesizing||t.currency){e=Math.abs(Number(e));var r=1e3,n=t.currency&&"string"==typeof t.currency?t.currency:"",o=t.decimals||1,i=["","K","M","B","T"],u="";t.filesizing&&(r=1024,i=["bytes","KB","MB","GB","TB"]);for(var c=4;c>=0;c--)if(0===c&&(u="".concat(e.toFixed(o)," ").concat(i[c])),e>=a(r,c)){u="".concat((e/a(r,c)).toFixed(o)," ").concat(i[c]);break}return n+u}return parseFloat(e)}(e,t),function(e,t){if(t.formater){var r=t.separator?"string"==typeof t.separator?t.separator:",":"";return"en-US"!==t.formater&&!0===t.separator?e:(n=r,e.replace(/^(?:(\d{1,3},(?:\d{1,3},?)*)|(\d{1,3}\.(?:\d{1,3}\.?)*)|(\d{1,3}(?:\s\d{1,3})*))([\.,]?\d{0,2}?)$/gi,(function(e,t,r,o,i){var a="",u="";if(void 0!==t?(a=t.replace(new RegExp(/,/gi,"gi"),n),u=","):void 0!==r?a=r.replace(new RegExp(/\./gi,"gi"),n):void 0!==o&&(a=o.replace(new RegExp(/ /gi,"gi"),n)),void 0!==i){var c=","!==u&&","!==n?",":".";a+=void 0!==i?i.replace(new RegExp(/\.|,/gi,"gi"),c):""}return a})))}var n;return e}(e=t.formater?e.toLocaleString(n,r):parseInt(e).toString(),t)}function c(e){return/^[0-9]+\.[0-9]+$/.test(e)?parseFloat(e):/^[0-9]+$/.test(e)?parseInt(e):/^true|false/i.test(e)?/^true/i.test(e):e}function f(e){for(var t=e.offsetTop,r=e.offsetLeft,n=e.offsetWidth,o=e.offsetHeight;e.offsetParent;)t+=(e=e.offsetParent).offsetTop,r+=e.offsetLeft;return t>=window.pageYOffset&&r>=window.pageXOffset&&t+o<=window.pageYOffset+window.innerHeight&&r+n<=window.pageXOffset+window.innerWidth}function s(){return"IntersectionObserver"in window&&"IntersectionObserverEntry"in window&&"intersectionRatio"in window.IntersectionObserverEntry.prototype}e.exports=function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},n={start:0,end:100,duration:2e3,delay:10,once:!0,pulse:!1,decimals:0,legacy:!0,filesizing:!1,currency:!1,separator:!1,formater:"us-US",selector:".purecounter"},a=o(e,n);function d(){var e=document.querySelectorAll(a.selector);if(0!==e.length)if(s()){var t=new IntersectionObserver(p.bind(this),{root:null,rootMargin:"20px",threshold:.5});e.forEach((function(e){t.observe(e)}))}else window.addEventListener&&(l(e),window.addEventListener("scroll",(function(t){l(e)}),{passive:!0}))}function l(e){e.forEach((function(e){!0===v(e).legacy&&f(e)&&p([e])}))}function p(e,t){e.forEach((function(e){var r=e.target||e,n=v(r);if(n.duration<=0)return r.innerHTML=u(n.end,n);if(!t&&!f(e)||t&&e.intersectionRatio<.5){var o=n.start>n.end?n.end:n.start;return r.innerHTML=u(o,n)}setTimeout((function(){return i(r,n)}),n.delay)}))}function v(e){var n=a,i=[].filter.call(e.attributes,(function(e){return/^data-purecounter-/.test(e.name)}));return o(0!=i.length?Object.assign.apply(Object,[{}].concat(r(i.map((function(e){var r=e.name,n=e.value;return t({},r.replace("data-purecounter-","").toLowerCase(),c(n))}))))):{},n)}d()}}},t={},r=function r(n){var o=t[n];if(void 0!==o)return o.exports;var i=t[n]={exports:{}};return e[n](i,i.exports,r),i.exports}(638),r;var e,t,r}));
+      </script>
+    {% endblock scripts %}
+{% endblock body %}
+
+

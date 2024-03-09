@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <title>FAQ</title>
+    {% endblock head %}
+
+
+{% block body %}
+<section id="" class=" d-flex align-items-center">
+<div class="container">
+    <div class="section-header">
+        <p>
+            Are you sure you want to delete
+            <a href="{% url 'delete' pk=ad.pk %}">Yes</a>
+            <a href="{% url 'desc' pk=ad.pk %}">No</a>
+        </p>
+    </div>
+
+</div>
+</section>
+
+
+{% block scripts %}
+{% endblock scripts %}
+{% endblock body %}

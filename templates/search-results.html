@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block head %}
+    <title>Search results</title>
+{% endblock %}
+
+
+{% block body %}
+<section id="call-to-action" class="call-to-action">
+    <div class="container">
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h3>Search Results</h3>
+          <a class="cta-btn" href="{% url 'index' %}">See all products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="service" class="services pt-0">
+    <div class="container">
+
+      <div class="section-header">
+        <h2>Showing results for <q>{{ query }}</q></h2>
+
+      </div>
+  <div class="row gy-4">
+    {% for result in results %}
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <div class="card-img">
+                  <img src="{% static 'img/storage-service.jpg' %}" alt="" class="img-fluid">
+                </div>
+                <h3><a href="{% url 'desc' pk=result.pk %}" class="stretched-link">{{ result.product_name }}</a></h3>
+                <p>
+                  &#8358;{{ result.price }}
+                </p>
+                <p>
+                  {{ result.category }}
+                </p>
+              </div>
+            </div><!-- End Card Item -->
+            {% empty %}
+                <div class="">
+                    <h3>No results</h3>
+                </div>
+    {% endfor %}
+            
+          </div>
+        </div>
+      </section>
+
+{% block scripts %}
+{% endblock %}
+{% endblock %}
+
+

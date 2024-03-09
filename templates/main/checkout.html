@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>{{ order.order_code }}</title>
+    {% endblock head %}
+
+
+{% block body %}
+<h1>Checkout</h1>
+<p>
+    {% for message in messages %}
+        {{ message }}
+    {% endfor %}
+</p>
+<table border="1">
+    <tr>
+        <td>Order Code</td>
+        <td>Buyer</td>
+        <td>Total Price</td>
+    </tr>
+    <tr>
+        <td>{{ order.order_code }}</td>
+        <td>{{ order.buyer }}</td>
+        <td>{{ order.total_price }}</td>
+
+    </tr>
+</table>
+<p>
+    <a href="{% url 'cancel' pk=order.pk %}">Cancel Order</a>
+</p>
+<a href="#">Select payment gateway</a>
+    {% block scripts %}
+    {% endblock scripts %}
+{% endblock body %}

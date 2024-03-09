@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block head %}
+    <title>Product Category - {{ category }}</title>
+    {% endblock head %}
+
+
+{% block body %}
+
+
+<section id="call-to-action" class="call-to-action">
+    <div class="container">
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h3>{{ category }} Section</h3>
+          <a class="cta-btn" href="{% url 'index' %}">Browse other categories</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section id="service" class="services pt-0">
+    <div class="container">
+
+    <div class="section-header">
+        <span>Products</span>
+        <h2>Products</h2>
+    </div>
+    </div>
+
+    <div class="row gy-4">
+{% if products %}
+{% for product in products %}
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-img">
+              {% if product.product_image %}
+              <img src="{{ product.product_image.url }}" alt="" class="img-fluid">
+              {% else %}
+              <img src="{% static 'img/storage-service.jpg' %}" alt="" class="img-fluid">
+              {% endif %}
+            </div>
+            <h3><a href="{% url 'desc' pk=product.pk %}" class="stretched-link">{{ product.product_name }}</a></h3>
+            <p>
+              &#8358;{{ product.price }}
+            </p>
+            <p>
+              {{ product.category }}
+            </p>
+          </div>
+        </div><!-- End Card Item -->
+{% endfor %}
+    </div>
+    </div>
+    </div>
+  </section>
+
+{% else %}
+    <h3>There are no products under this category</h3>
+<p>
+    <b>Browse other categories</b><br>
+   <p> {% for category in categories %} |
+
+    <a href="{% url 'category-filter' category %}">{{ category }}</a>
+
+{% endfor %}</p>
+</p>
+{% endif %}
+
+    {% block scripts %}
+    {% endblock scripts %}
+{% endblock body %}

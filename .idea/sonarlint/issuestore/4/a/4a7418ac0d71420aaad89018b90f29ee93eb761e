@@ -1,0 +1,16 @@
+
+dpython:S2208"GImport only needed names or import the module and then use its members.(½Ãêùÿÿÿÿÿ
+dpython:S2208"GImport only needed names or import the module and then use its members.(ÅÙï„úÿÿÿÿ
+ipython:S1542R"QRename function "UserProfile" to match the regular expression ^[a-z_][a-z0-9_]*$.(ëýÍÇ
+ppython:S1542Y"SRename function "updateProfile" to match the regular expression ^[a-z_][a-z0-9_]*$.(†Å·òþÿÿÿÿ
+mpython:S1542o"PRename function "AddProduct" to match the regular expression ^[a-z_][a-z0-9_]*$.(ÄÚ´˜üÿÿÿÿ
+vpython:S1542•"XRename function "productDescription" to match the regular expression ^[a-z_][a-z0-9_]*$.(ôÄÄØýÿÿÿÿ
+rpython:S1542²"TRename function "categoryFilter" to match the regular expression ^[a-z_][a-z0-9_]*$.(Å‘ïåûÿÿÿÿ
+Upython:S5754ä"<Specify an exception class to catch or reraise the exception(ˆÊÉ·
+opython:S1542ù"QRename function "reportIssue" to match the regular expression ^[a-z_][a-z0-9_]*$.(¥—éþÿÿÿÿ
+Upython:S5754‹"<Specify an exception class to catch or reraise the exception(ˆÊÉ·
+lpython:S1542”"NRename function "deleteAd" to match the regular expression ^[a-z_][a-z0-9_]*$.(’òä¯øÿÿÿÿ
+Upython:S5754™"<Specify an exception class to catch or reraise the exception(ˆÊÉ·
+qpython:S1542Ÿ"SRename function "confirmDelete" to match the regular expression ^[a-z_][a-z0-9_]*$.(¯§³ÿÿÿÿÿ
+Ipython:S1481¾"+Remove the unused local variable "message".(™™æåøÿÿÿÿ
+opython:S1542ô"QRename function "cancelOrder" to match the regular expression ^[a-z_][a-z0-9_]*$.(©à£‹ýÿÿÿÿ

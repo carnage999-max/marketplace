@@ -1,0 +1,32 @@
+{% load static %}
+<!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+         <img src="{% static 'img/logo.png' %}" alt="">
+        <h1>AnyMart</h1>
+      </a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <form action="{% url 'search' %}" class="form-search d-flex align-items-stretch mb-3" method="get">
+            <input type="text" class="form-control" placeholder="Search for a product or category" name="search">
+            <input type="submit" class="btn btn-primary" style="background-color:#26547C;" value="Search">
+          </form> 
+            <div class="container">
+    {% if not user.is_authenticated %}
+    <li class="nav-item"><a href="{% url 'login' %}" class="nav-link text-white">Login</a></li>
+    <li class="nav-item"><a href="{% url 'register' %}" class="nav-link text-white">Register</a></li>
+    {% else %}
+    <li class="nav-item"><a href="{% url 'addproduct' %}" class="nav-link text-white">Create New Ad</a></li>
+    <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link text-white">Logout</a></li>
+    <li class="nav-item"><a href="{% url 'profile' request.user %}" class="nav-link text-white">{{ request.user }} <i class="fa fa-user-md"></i></a></li>
+    {% endif %}
+            </div>
+        </ul>
+      </nav>
+
+    </div>
+  </header>

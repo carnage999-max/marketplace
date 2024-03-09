@@ -1,0 +1,58 @@
+"Agriculture & Food" : ["Farm animals", "Farm Machinery", "Feeds, Supplements and Seeds", "Meals and Drinks"]
+
+"Babies & Kids" : ["Baby & Child care", "Baby & kids' accessories", "Children's Clothing", "Children's Furniture", 
+                "Children's shoes", "Toys", "Prams & Strollers", "Maternity & Pregnancy"]
+
+"Commercial equipment & Tools" : [
+    "Industrial Ovens", "Manufacturing equipment", "Medical Supplies & equipment", "Printing Equipment", 
+    "Restaurant & Catering Equipment", "Salon Equipment", "Safetywear & equipment", "Store Equipment", "Stationery"
+]
+
+"Electronics" : [
+    "Audio & Music Equipment", "Computer Accessories", "Computer Hardware", "Computer Monitor", "Laptops & Computers",
+    "Headphones", "Networking Products", "Photo & Video Cameras", "Printers & Scanners", "Security & Surveillance Products",
+    "Software", "TV & DVD Equipment"
+]
+
+"Fashion" : [
+    "Bags", "Clothing", "Clothing Accessories", "Jewellery", "Shoes", "Watches", "Wedding Wear & Accessories"
+]
+
+"Health & Beauty" : [
+    "Bath & Body", "Fragrances", "Hair Beauty", "Make-Up", "Sexual Wellness", "Skincare", "Tools & Accessories",
+    "Vitamins and Supplements"
+]
+
+"Home, Furniture & Appliances" : [
+    "Furniture", "Garden Supplies", "Home Accessories", "Home Appliances", "Household Chemicals", "Kitchen Appliances",
+    "Kitchenware & Cookware"
+]
+
+"Jobs" : [................................................................]
+
+"Mobile Phones & Tablets" : [
+    "Accessories for Mobile Phones & Tablets", "Mobile Phones", "Smart Watches & Trackers", "Tablets"
+]
+
+"Pets" : [
+    "Birds", "Cats & Kittens", "Dogs & Puppies", "Fish", "Other Animals", "Pet Accessories", "Repltiles"
+]
+
+"Repair & Construction" : [
+    "Building Materials", "Doors", "Electrical Equipment", "Electrical hand Tools", "Hand Tools", "Windows", 
+    "Plumbing & Water Supply", "Solar Energy"
+]
+
+Services : [................................................................]
+
+"Sports, Arts & Outdoors" : [
+    "Arts & Crafts", "Books & Games", "CDs & DVDs", "Camping Gear", "Musical Instruments & Gear", "Sports Equipment"
+]
+
+"Vehicles" : [
+    "Buses & Microbuses", "Cars", "Heavy Equipment", "Motorbikes & Scooters", "Trucks & Trailers", "Watercraft & Boats"
+]
+
+Books
+
+Games

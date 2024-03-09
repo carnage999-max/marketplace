@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block head %}
+    <title>{{ user }}'s profile</title>
+    {% endblock head %}
+
+
+{% block body %}
+<section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+        <div class="section-header">
+            <span>Profile</span>
+            <h2>Profile</h2>
+          </div>
+    </div>
+    </section>
+
+<section>
+
+<div class="container">
+  {% for message in messages %}
+  <div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">{{ message }}!</h4>
+  </div>
+  {% endfor %}
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h1>Owner</h1><hr>
+            <!-- User profile information -->
+            <h5 class="card-title"><i class="fa fa-user"></i> <a href="{% url 'profile' username=user.username %}">{{ user.username }}</a></h5>
+            <p class="card-text"><i class="fa fa-envelope-open"></i> <a href="mailto:{{ user.email }}" target="_blank">{{ user.email }}</a></p>
+            <p class="card-text"><i class="fa fa-phone"></i> <a href="tel:+234{{ user.phone_number }}">+234{{ user.phone_number }}</a></p>
+            <p class="card-text"><i class="fa fa-map-marker-alt"></i> {{ user.state }}, {{ user.lga }}</p>
+    {% if request.user == user %}
+      <a href="{% url 'update' username=user.username %}" class="btn" style="background-color:#26547C; color:#fff;">Update Profile</a>
+      <a href="{% url 'change_password' %}" class="btn" style="background-color:#26547C; color:#fff;">Change Password</a>
+    {% endif %}  
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Shop info</h2>
+            URL: <a href="{{ user.shop_url }}">{{ user.shop_url }}</a>
+            <p>Description: {{ user.shop_description }}</p>
+            <div class="social-links mt-4">
+              <a href="{{ user.x_twitter }}" class="twitter"><i class="bi bi-twitter"></i>{{ user.x_twitter }}</a>
+              <a href="{{ user.facebook }}" class="facebook"><i class="bi bi-facebook"></i>{{ user.facebook }}</a>
+              <a href="{{ user.instagram }}" class="instagram"><i class="bi bi-instagram"></i>{{ user.instagram }}</a>
+              <a href="{{ user.linkedin }}" class="linkedin"><i class="bi bi-linkedin"></i>{{ user.linkedin }}</a>
+            </div>
+        </div>
+        </div>
+      </div>
+      <section id="service" class="services pt-0">
+        <div class="container">
+    
+          <div class="section-header">
+            <span>Here are ads placed by <q>{{ user.username }}</q></span>
+            <h2>Here are ads placed by <q>{{ user.username }}</q></h2>
+    
+          </div>
+    {% if user_products %}
+          <div class="row gy-4">
+    {% for product in user_products %}
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <div class="card-img">
+                  {% with image=product.cloudinaryurls_set.first %}
+                    {% if image %}
+                      <img src="{{ image.link }}" alt="Product Image" class="img-fluid">
+                    {% else %}
+                      <img src="{% static 'img/storage-service.jpg' %}" alt="" class="img-fluid">
+                    {% endif %}
+                  {% endwith %}
+                </div>
+                <h3><a href="{% url 'desc' pk=product.pk %}" class="stretched-link">{{ product.product_name }}</a></h3>
+                <p>
+                  &#8358;{{ product.price }}
+                </p>
+                <p>
+                  {{ product.category }}
+                </p>
+              </div>
+            </div><!-- End Card Item -->
+    {% endfor %}
+    {% else %}
+            <div class="container text-center">
+            <h1>{{ user.username }} has not posted any ads</h1>
+          </div>
+    {% endif %}
+            
+          </div>
+        </div>
+      </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+</section>
+    {% block scripts %}
+    {% endblock scripts %}
+{% endblock body %}

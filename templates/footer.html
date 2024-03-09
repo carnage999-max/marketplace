@@ -1,0 +1,92 @@
+<style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .content {
+        flex: 1;
+    }
+</style>
+
+
+<!-- footer.html -->
+
+<footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+            <span>AnyMart</span>
+          </a>
+          <p>
+            With AnyMart, you can shop anywhere, anytime and on any device.
+            We strive to make buying and selling hassle-free and transparent, 
+            empoering individual to explore a world of limitless possibilities.
+          </p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About us</a></li>
+            <li><a href="{% url 'terms' %}">Terms of service</a></li>
+            <li><a href="{% url 'privacy' %}">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+            <li><a href="{% url 'faq' %}">FAQ</a></li>
+            <li><a href="{% url 'report' %}">Report issue</a></li>
+              </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            <strong>Phone:</strong> +234 9159167551<br>
+            <strong>Email:</strong> anymart@gmail.com<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        <span id="year"></span>
+        <script>
+            var currentYear = new Date().getFullYear();
+            document.getElementById("year").innerHTML += currentYear;
+        </script>
+        Copyright &copy;<strong><span>AnyMart</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits"  style="visibility: hidden;">
+        Designed by <a href="https://bootstrapmade.com/">bootstrapmade</a>
+      </div>
+    </div>
+
+  </footer>
+
+
+
