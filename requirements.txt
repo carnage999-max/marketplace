@@ -21,3 +21,4 @@ setuptools==65.5.0
 tornado==6.2
 wheel==0.38.4
 django-rest-registration==0.8.3
+psycopg2
