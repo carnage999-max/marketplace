@@ -1,4 +1,10 @@
 {
+    "functions": {
+      "api": {
+        "runtime": "python3.10"
+      }
+    },
+    
     "version": 2,
     "builds": [
       {
