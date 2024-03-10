@@ -1,3 +1,3 @@
 pipenv install django
 pip install -r requirements.txt
-python manage.py collectstatic
+python-3.10 manage.py collectstatic
