@@ -1,16 +1,16 @@
 {
     "functions": {
       "api": {
-        "runtime": "python3.10"
+        "runtime": "python-3.10"
       }
     },
-    
+
     "version": 2,
     "builds": [
       {
         "src": "market/wsgi.py",
         "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.10" }
+        "config": { "maxLambdaSize": "15mb", "runtime": "python-3.10" }
       },
       {
         "src": "build_files.sh",
